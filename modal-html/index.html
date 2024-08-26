@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    
+    <h2 class="title">¡MODAL CON HTML 👇🏻!</h2>
+    <button class="btn btn--open">Abrir modal</button>
+
+
+    <dialog class="dialog">
+
+        <figure class="dialog__figure">
+            <img src="./assets/spiderman.jpg" class="dialog__img">
+        </figure>
+
+        <section class="dialog__section">
+            <h2 class="dialog__title">¡Soy un Modal con HTML!</h2>
+            <button class="btn btn--close">Cerrar Modal</button>
+        </section>
+
+    </dialog>
+    
+    <script>
+
+        const btnOpenModal = document.querySelector(".btn--open");
+    
+        const btnCloseModal = document.querySelector(".btn--close");
+
+        const modal = document.querySelector(".dialog");
+
+
+        btnOpenModal.addEventListener("click", ()=>{
+            modal.showModal();
+        });
+
+        btnCloseModal.addEventListener("click", ()=>{
+            modal.close();
+        });
+
+
+    </script>
+
+</body>
+</html>

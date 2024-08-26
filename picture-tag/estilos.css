@@ -1,0 +1,25 @@
+*, ::after, ::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.picture{
+    margin: 0 auto;
+    display: block;
+    width: min(50%, 400px);
+}
+
+.img{
+    display: block;
+    width: 100%;
+}

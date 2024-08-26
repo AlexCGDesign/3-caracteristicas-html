@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+<body>
+    
+    <h2 class="title">¡HTML RESPONSIVE!</h2>
+
+    <picture class="picture">
+
+        <source class="img" media="(min-width:1000px)" srcset="https://m.media-amazon.com/images/S/pv-target-images/0c9ce4e037546965d6b1f3807e9f8f549a113d32066b2bdb22ada5d179c0d89a.jpg">
+
+        <source media="(min-width:700px)" srcset="./assets/spiderman.jpg" class="img">
+
+        <img src="./assets/wolverine.webp" class="img">
+
+    </picture>
+    
+
+
+</body>
+</html>
